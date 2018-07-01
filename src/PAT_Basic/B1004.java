@@ -37,7 +37,7 @@ public class B1004 {
 		int min = 0;
 		int min_index = 0;
 		Scanner in = new Scanner(System.in);
-		int n = in.nextInt();
+		int n = Integer.parseInt(in.nextLine());
 		List<String> strList = new ArrayList<String>();
 		for (int i=0;i<n;i++) {
 			strList.add(in.nextLine());
@@ -46,7 +46,7 @@ public class B1004 {
 		
 		for(int i=0;i<strList.size();i++) {
 			String temp[] = strList.get(i).split(" ");
-			if(max < Integer.parseInt(temp[2])) {
+			if(max < Integer.parseInt(temp[2])) {  
 				max = Integer.parseInt(temp[2]);
 				max_index = i;
 			}
@@ -56,6 +56,12 @@ public class B1004 {
 				min_index = i;
 			}
 		}
+		
+		String maxStu = strList.get(max_index).split(" ")[0]  + " " + strList.get(max_index).split(" ")[1];
+		String minStu = strList.get(min_index).split(" ")[0]  + " " + strList.get(min_index).split(" ")[1];
+		
+		System.out.println(maxStu);
+		System.out.print(minStu);
 		
 	}
 }
