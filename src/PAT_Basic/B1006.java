@@ -6,6 +6,7 @@ public class B1006 {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();
+		s.close();
 		int baiWei = n / 100;
 		int geWei = n % 10;
 		int shiWei = (n-baiWei * 100) /10;
