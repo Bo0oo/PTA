@@ -34,7 +34,7 @@ public class B1004 {
 	public static void main(String[] args) {
 		int max = 0;
 		int max_index = 0;
-		int min = 0;
+		int min = 101;
 		int min_index = 0;
 		Scanner in = new Scanner(System.in);
 		int n = Integer.parseInt(in.nextLine());
